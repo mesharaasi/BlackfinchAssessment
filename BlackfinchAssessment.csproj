@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Blackfinch.LoanProcessor.Tests\**" />
+    <Compile Remove="Blackfinch.LoanProcessor\**" />
+    <Compile Remove="Lending.Repository\**" />
+    <EmbeddedResource Remove="Blackfinch.LoanProcessor.Tests\**" />
+    <EmbeddedResource Remove="Blackfinch.LoanProcessor\**" />
+    <EmbeddedResource Remove="Lending.Repository\**" />
+    <None Remove="Blackfinch.LoanProcessor.Tests\**" />
+    <None Remove="Blackfinch.LoanProcessor\**" />
+    <None Remove="Lending.Repository\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="Blackfinch.LoanProcessor\Blackfinch.LoanProcessor.csproj" />
+  </ItemGroup>
+
+</Project>
